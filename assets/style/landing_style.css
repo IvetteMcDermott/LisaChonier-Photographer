@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* VARS FOR COLORS */
+:root {
+  --background: #b8b5b548;
+  --background-footer: #4c4b4bc7;
+  --background-transparency: #1f1e1e7e;
+  --light-grey: #ebe1e1;
+  --golden: #9a6d2b;
+  --light-golden: #b69b5b;
+}
+
+/* GENERAL CSS */
+body {
+  background: -webkit-linear-gradient(90deg, #fd9d775e, #ffd7de31);
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Playfair Display !important;
+  color: var(--golden);
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+}
+
+.landing_h3 {
+  width: 100%;
+  padding: 30px;
+  margin: 0;
+  font-family: Playfair Display !important;
+  color: var(--golden);
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* NAVBAR */
+.navbar {
+  justify-content: flex-end !important;
+}
+
+.navbar-toggler-icon {
+  color: #9a6d2b;
+}
+
+#landing_navbar {
+  top: 0;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
+.landing_navlink {
+  text-align: end;
+}
+
+#landing_img {
+  width: 50%;
+  background-color: var(--background-transparency);
+}
+
+#landing_menu_opts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+li a {
+  font-size: larger;
+  color: var(--golden) !important;
+  text-shadow: 1px 1px 1px var(--background-transparency);
+}
+
+li a:hover {
+  background-color: var(--background-transparency) !important;
+  color: var(--light-golden) !important;
+  border-radius: 5px;
+}
+
+#landing_dropdown_opts {
+  background-color: var(--background-transparency) !important;
+}
+
+/* LANDING PAGE CONTENT SECTION */
+.landing_content_sections {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* REVIEWS */
+/* DIVS */
+#rev_1,
+#rev_2,
+#rev_3 {
+  width: 95%;
+  background-color: var(--background);
+  margin-left: 0 auto;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: 600;
+  color: var(--golden);
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* DIV FOR IMAGE AND TEXT */
+.landing_review_container {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.landing_review_img {
+  width: 95%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* TEXT CLASS */
+.landing_review_content {
+  width: 75%;
+  height: auto;
+  font-size: 0.75rem;
+  position: absolute;
+  color: var(--light-grey);
+  background-color: var(--background-transparency);
+  padding: 10px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  opacity: 0;
+}
+
+/* TEXT ID FOR JS */
+#rev_1_content,
+#rev_2_content,
+#rev_3_content {
+  opacity: 0;
+}
+
+/* REVIEW BUTTON */
+#rev_1_b,
+#rev_2_b,
+#rev_3_b {
+  border: none;
+  background: none;
+  font-size: small;
+  display: flex;
+  align-items: flex-end;
+  color: var(--golden);
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.show_review {
+  opacity: 1 !important;
+  transition: opacity 2s ease-in;
+  align-items: center;
+}
+
+/* REVIEW SIGNATURE AND BUTTON */
+.review_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing_review_signature {
+  margin: 1.5rem 0 0.5rem 0;
+  display: flex;
+  font-family: Great Vibes;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+/* AWARDS SECTION */
+#landing_awards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3rem 0 5rem 0;
+}
+
+.landing_awards_img {
+  width: 9rem;
+}
+
+/* SINAN CODE */
+
+/* Specific styles for the "Follow Us" section */
+.footer .footer-section:last-child {
+  text-align: right; /* Aligns the social media icons to the right */
+}
+
+/* Footer Styling  */
+.footer {
+  background-color: #99877f;
+  padding: 40px;
+  font-size: 14px;
+  width: 100%; /* Full width of the screen (you can adjust this value) */
+  height: fit-content !important; /* to keep the color all the necessary height */
+  display: flex; /* Use flexbox to structure content */
+  flex-direction: column; /* Align child elements in a column */
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+/* MEDIAS  */
+@media only screen and (min-width: 500px) {
+  .landing_review_content {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .landing_review_content {
+    font-size: 1.3rem;
+  }
+
+  .landing_review_signature {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #landing_footer_items {
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #landing_img {
+    width: 80% !important;
+  }
+  .landing_review_content {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #landing_img {
+    width: 100% !important;
+  }
+  .landing_content_sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #rev_1,
+  #rev_2,
+  #rev_3 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  #rev_1,
+  #rev_3 {
+    align-self: flex-start;
+  }
+  #rev_2 {
+    align-self: flex-end;
+  }
+
+  /*  CHANGE IN REVIEWS VISIBILITY */
+  #rev_1_b,
+  #rev_2_b,
+  #rev_3_b {
+    display: none !important;
+  }
+
+  .landing_review_content {
+    width: 100%;
+    opacity: 1 !important;
+    position: relative;
+    background: none;
+    color: var(--golden);
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+    width: 80% !important;
+    margin: 0;
+    margin-left: 10% !important;
+  }
+
+  #landing_navbar {
+    width: 80% !important;
+  }
+}

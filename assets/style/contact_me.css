@@ -1,0 +1,326 @@
+/* Import Google Fonts for Great Vibes and Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Body Background Color */
+body {
+  font-family: Playfair Display !important;
+  background: -webkit-linear-gradient(90deg, #fd9d775e, #ffd7de31);
+}
+
+/* START NAVBAR */
+:root {
+  --background: #b8b5b548; /* Semi-transparent background color for navbar */
+  --background-footer: #4c4b4bc7; /* Semi-transparent background color for footer */
+  --background-transparency: #1f1e1e7e; /* Transparent background used for hover effects */
+  --light-grey: #ebe1e1; /* Light grey color for various text elements */
+  --golden: #9a6d2b; /* Golden color for navbar and link text */
+  --light-golden: #b69b5b; /* Light golden color for hover effects */
+}
+
+.navbar {
+  justify-content: flex-end !important; /* Aligns navbar items to the right */
+}
+
+.navbar-toggler-icon {
+  /* Sets the color of the hamburger icon in the navbar */
+  color: #9a6d2b;
+}
+
+#landing_navbar {
+  top: 0;
+  width: 100%; /* Makes the navbar span the full width of the screen */
+  display: flex; /* Uses flexbox to align navbar items */
+  background-color: var(
+    --background
+  ); /* Sets the background color for the navbar */
+}
+
+.landing_navlink {
+  /* Aligns navbar links to the end (right) */
+  text-align: end;
+}
+
+#landing_img {
+  width: 50%;
+  background-color: var(
+    --background-transparency
+  ); /* Applies transparent background to the image */
+}
+
+#landing_menu_opts {
+  display: flex; /* Uses flexbox to align menu options */
+  align-items: center;
+  /* Aligns items to the center */
+  justify-content: flex-end; /* Aligns items to the right */
+}
+.nav-item {
+  font-weight: 600; /* Sets font weight of navbar items to bold */
+  margin-right: 2rem; /* Adds margin to the right of each navbar item */
+}
+
+li a {
+  font-size: larger !important; /* Increases the font size of links */
+  text-shadow: 1px 1px 1px var(--background-transparency); /* Adds a subtle text shadow */
+}
+
+li a:hover {
+  background-color: var(
+    --background-transparency
+  ) !important; /* Changes background on hover */
+  color: var(--light-golden) !important; /* Changes link color on hover */
+  border-radius: 5px; /* Rounds the corners of the link on hover */
+}
+
+#landing_dropdown_opts {
+  background-color: var(--background-transparency) !important;
+}
+
+/* Responsive Logo Adjustment */
+@media (max-width: 767px) {
+  .navbar-logo {
+    width: 100px; /* Reduce logo size on smaller screens */
+  }
+}
+
+/* News Slider Styling */
+.news-slider {
+  overflow: hidden; /* Hides content that overflows the slider */
+  width: 100%; /* Ensures the slider takes full width */
+  max-width: 1300px; /* Sets maximum width of the slider */
+  height: 100px; /* Defines the height of the news slider */
+  margin: 20px auto; /* Centers the slider with a 20px margin */
+  border-radius: 15px; /* Rounds the corners of the slider */
+  background: #f9f9f9; /* Light background color for the slider */
+  box-shadow: 0 8px 15px #ecc4c4; /* Adds a soft shadow around the slider */
+  display: flex; /* Uses flexbox for the slider content */
+  align-items: center; /* Vertically centers the content */
+}
+.news-track {
+  display: flex; /* Uses flexbox for the sliding news items */
+  width: calc(100% * 6); /* Adjusted width to fit all 6 items */
+  animation: slide 160s linear infinite; /* Creates an infinite slide animation */
+}
+
+.news-item {
+  min-width: 100%; /* Ensures each news item takes up 100% of the width */
+  padding: 20px; /* Adds padding inside each news item */
+  box-sizing: border-box; /* Includes padding in the total width */
+  text-align: center; /* Centers the text inside each news item */
+  font-family: "Georgia", "Times New Roman", Times, serif; /* Sets a serif font for news items */
+}
+
+.news-item h3 {
+  font-size: 1.5rem; /* Increases the font size of the news item title */
+  color: #333; /* Dark color for the title text */
+  margin-bottom: 10px; /* Adds space below the title */
+}
+
+.news-item p {
+  font-size: 1rem; /* Sets font size for the news item description */
+  color: #555; /* Sets a gray color for the description */
+  line-height: 1.6; /* Increases line height for better readability */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  16.67% {
+    transform: translateX(-100%);
+  }
+  33.33% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  66.67% {
+    transform: translateX(-400%);
+  }
+  83.33% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Optional: Pause on hover */
+.news-slider:hover .news-track {
+  animation-play-state: paused;
+}
+
+/* Contact Form Styling */
+.contact-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+}
+.contact-container h2 {
+  margin-bottom: 20px; /* Adds space below the heading */
+  text-align: center; /* Centers the heading */
+  color: #333; /* Dark color for the heading */
+}
+.form-container {
+  background-color: white; /* White background for the form */
+  padding: 20px; /* Adds padding inside the form */
+  border-radius: 8px; /* Rounds the corners of the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the form */
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%; /* Ensures input fields take full width */
+  padding: 10px; /* Adds padding inside the fields */
+  margin: 10px 0; /* Adds space between input fields */
+  border: 1px solid #ddd; /* Light border for the fields */
+  border-radius: 5px; /* Rounded corners for the fields */
+  box-sizing: border-box; /* Includes padding in the total width */
+}
+
+.form-container button {
+  padding: 12px 20px; /* Adds padding inside the button */
+  background-color: #333; /* Dark background color for the button */
+  color: white; /* White text color for the button */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+}
+/* Lightens the button color on hover */
+.form-container button:hover {
+  background-color: #555;
+}
+/* Adds space above the map */
+.map-container {
+  margin-top: 40px;
+}
+
+.map-container iframe {
+  width: 100%; /* Makes the map take full width */
+  height: 400px; /* Sets the height of the map */
+  border: 0; /* Removes the border around the map */
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .form-container,
+  .map-container {
+    flex: 1;
+  }
+}
+
+/* Stacked on small screens */
+@media (max-width: 767px) {
+  .contact-row {
+    display: block;
+  }
+  .form-container,
+  .map-container {
+    width: 100%;
+  }
+}
+
+.footer .footer-section:last-child {
+  text-align: right;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #99877f; /* Light gray background color */
+  padding: 40px;
+  font-size: 14px;
+  width: 100%;
+  height: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer {
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: auto;
+  }
+}
+.footer-container {
+  display: flex; /* Uses flexbox for the footer sections */
+  justify-content: space-between; /* Adds space between sections */
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  gap: 40px; /* Adds space between sections */
+  width: 100%;
+}
+
+.footer-section form input {
+  padding: 10px;
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.footer-section form button:hover {
+  background-color: #d63c65;
+}
+
+.social-links {
+  display: flex; /* Uses flexbox for social media links */
+  gap: 10px; /* Adds space between social media icons */
+  justify-content: flex-end; /* Aligns the icons to the right */
+  width: 100%;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+/* Success Message */
+#success-message {
+  display: none; /* Hides the success message by default */
+  text-align: center; /* Centers the success message */
+  margin-top: 20px; /* Adds margin above the success message */
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1; /* Makes each footer section flexible */
+  min-width: 250px; /* Sets a minimum width for footer sections */
+  margin-bottom: 20px; /* Adds space below each footer section */
+}
+
+.footer-section h3 {
+  font-size: 18px; /* Sets font size for footer section headings */
+  margin-bottom: 15px; /* Adds space below section headings */
+}
+
+/* Adds space below paragraph text */
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+/* social media icons */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /* Ensures icons are fully contained */
+}

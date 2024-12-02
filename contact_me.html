@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Capture your perfect day with stunning wedding photography. From intimate moments to grand celebrations, our professional photographer ensures timeless memories you'll cherish forever.">
+
+    <!--META SEO -->
+    <!--https://ahrefs.com/blog/seo-meta-tags/#:~:text=a%20different%20snippet.-,Why%20it's%20important%20for%20SEO,what%20they're%20looking%20for.-->
+    <!--https://www.janowski.dev/articles/seo-for-django-5-methods-to-improve-seo/#:~:text=Meta%20tags%20provide%20the%20search,should%20be%20short%20and%20descriptive.-->
+    <meta property="og:type" content="business">
+    <meta property="og:title" content="Lisa Chonier - Photographer">
+    <meta property="og:description"
+        content="Photographer in Dublin and France, wedding photographer, portolio photographer">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Lisa Chonier">
+    <!--  -->
+
+    <title>Lisa Chonier - Contact Me</title>
+
+    <link rel="stylesheet" href="assets/style/contact_me.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+</head>
+
+<body>
+
+    <div id="landing_navbar">
+        <div>
+            <a class="navbar-brand" href="index.html">
+                <img id="landing_img" src="assets/images/logo_canva.webp" alt="logo"></a>
+        </div>
+        <div class="container-fluid" id="landing_menu_opts">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink active" aria-current="page" href="index.html"
+                                rel="noopener">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink" href="about_me.html" rel="noopener">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link landing_navlink dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="noopener">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="landing_dropdown_opts"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item " href="weddingGallery.html">Weddings</a></li>
+                                <li><a class="dropdown-item" href="personalshootGallery.html">Personal & Couple
+                                        Shoots</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink" href="contact_me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- News Slider -->
+    <div class="news-slider">
+        <div class="news-track">
+            <div class="news-item">
+                <h3>News</h3>
+                <p>Exciting updates in the photography industry. Stay tuned!</p>
+            </div>
+            <div class="news-item">
+                <h3>Event</h3>
+                <p>We’ll be hosting a wedding photography masterclass next month.</p>
+            </div>
+            <div class="news-item">
+                <h3>Client Spotlight</h3>
+                <p>Congratulations to Gary and Sinead on their beautiful wedding!</p>
+            </div>
+            <div class="news-item">
+                <h3>Special Offer</h3>
+                <p>Book your session this month and enjoy a 20% discount!</p>
+            </div>
+            <div class="news-item">
+                <h3>Available</h3>
+                <p> Dublin, Ireland - January 2025 - June 2025 !</p>
+            </div>
+            <div class="news-item">
+                <h3>Available</h3>
+                <p> Toulon, France - June 2025 - September 2025 !</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact" class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-row">
+            <!-- Success Message Container -->
+
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <form id="contact-form" action="#">
+                    <div class="name-container">
+                        <label for="first-name">First Name (required)</label>
+                        <input type="text" id="first-name" placeholder="First Name" required />
+                        <label for="last-name">Last Name (required)</label>
+                        <input type="text" id="last-name" placeholder="Last Name" required />
+                    </div>
+                    <label for="email">E-mail (required)</label>
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <div class="newsletter">
+                        <label>
+                            <input type="checkbox" id="signup-news" /> Sign up for news and updates
+                        </label>
+                    </div>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" placeholder="Phone Number" />
+                    <label for="callback">Do you want me to call you back?</label>
+                    <select id="callback" required>
+                        <option value="">Choose an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <label for="country">Country</label>
+                    <select id="country" required>
+                        <option value="ireland">Ireland</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="service">Which photography service are you looking for? (required)</label>
+                    <select id="service" required>
+                        <option value="">Choose an option</option>
+                        <option value="wedding">Wedding Photography</option>
+                        <option value="event">Event Photography</option>
+                        <option value="portrait">Portrait Photography</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="event-date">Date of the Event (required)</label>
+                    <input type="date" id="event-date" required />
+                    <label for="message">Tell me everything! (required)</label>
+                    <textarea id="message" placeholder="Details about the event or your request" required></textarea>
+                    <label for="location">Location (required)</label>
+                    <input type="text" id="location" placeholder="Event location" required />
+                    <label for="referral">How did you hear about me? (required)</label>
+                    <select id="referral" required>
+                        <option value="">Choose an option</option>
+                        <option value="search">Google Search</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="friend">Friend</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+                <!-- Success Message Container -->
+                <div id="success-message" class="alert alert-success" style="display:none;">
+                    Your message has been sent successfully!
+                </div>
+
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container">
+                <h2>Find Us</h2>
+                <div class="footer-section">
+                    <h3>"We can't wait to hear from you!"</h3>
+                    <p>Email: <a href="mailto:hello@photographer.com">hello@photographer.com</a></p>
+                    <p>Phone: <a href="tel:+353000000000">+353 (000) 000-000</a></p>
+                    <p>Address: Photography St, City, Country</p>
+                </div>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.692887964427!2d-6.260309384042743!3d53.34980597997992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9af2f3c25b%3A0x9e7eaa6133d3520!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sus!4v1690492158907!5m2!1sen!2sus"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>News Letter</h3>
+                <p>Stay updated with our latest work and offers.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+
+
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/lisachonier/%22" target="_blank" rel="noopener">
+                        <img src="assets/icons/instagram_2111463.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/lisachonierweddings/%22" target="_blank" rel="noopener">
+                        <img src="assets/icons/facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href=" https://www.tiktok.com/@lisachonier%22" target="_blank" rel="noopener">
+                        <img src="assets/icons/7024783_tiktok_social media_icon.png" alt="TikTok" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Photographer's Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and Popper.js (for dropdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to handle the form submission and show success message
+        const form = document.querySelector('#contact-form');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting (page reload)
+
+
+            // Show the success message
+            successMessage.style.display = 'block';
+
+            // Reset the form fields
+            form.reset();
+
+            // Optionally, you can hide the success message after a few seconds
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+        });
+    </script>
+</body>
+
+</html>

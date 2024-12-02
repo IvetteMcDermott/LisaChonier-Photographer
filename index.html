@@ -1,0 +1,247 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--META SEO -->
+    <!--https://ahrefs.com/blog/seo-meta-tags/#:~:text=a%20different%20snippet.-,Why%20it's%20important%20for%20SEO,what%20they're%20looking%20for.-->
+    <!--https://www.janowski.dev/articles/seo-for-django-5-methods-to-improve-seo/#:~:text=Meta%20tags%20provide%20the%20search,should%20be%20short%20and%20descriptive.-->
+    <meta property="og:type" content="business">
+    <meta property="og:title" content="Lisa Chonier - Photographer">
+    <meta property="og:description"
+        content="Photographer in Dublin and France, wedding photographer, portolio photographer">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Lisa Chonier">
+    <!--  -->
+
+    <title>Liza Chonier - Welcome</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style/landing_style.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+</head>
+
+<body>
+    <!-- VIDEO -->
+    <div id="video">
+        <video width="100%" height="auto" muted autoplay loop loading="lazy" controls
+            poster="assets/images/2023-Dublin-Rachel-Wedding-141_websize.webp">
+
+            <source src="assets/video/VID-20241003-WA0000.mp4" type="video/mp4">
+
+            <p>Your browser does not support the video tag.</p>
+        </video>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <div id="landing_navbar">
+        <div>
+            <a class="navbar-brand" href="index.html">
+                <img id="landing_img" src="assets/images/logo_canva.webp" alt="logo"></a>
+        </div>
+        <div class="container-fluid" id="landing_menu_opts">
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink active" aria-current="page" href="index.html"
+                                rel="noopener">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink" href="about_me.html" rel="noopener">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link landing_navlink dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="noopener">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" id="landing_dropdown_opts"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item " href="weddingGallery.html">Weddings</a></li>
+                                <li><a class="dropdown-item" href="personalshootGallery.html">Personal & Couple
+                                        Shoots</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link landing_navlink" href="contact_me.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- CONTENT SECTION - REVIEWS - AWARDS -->
+    <h3 class="landing_h3"> Clients say ...</h3>
+    <div class="landing_content_sections">
+        <div id="rev_1">
+            <div class="landing_review_container ">
+                <img class="landing_review_img" src="assets/images/2023+-+Dublin+-+Ally+-+Wedding+-+367.webp"
+                    alt="wedding photographer in Dublin capturing bride and groom on wedding day">
+                <p class="landing_review_content" id="rev_content_1">The most amazing photographer we could have
+                    possibly asked for! Her
+                    photos are unreal and she is the nicest person ever too. She was an amazing presence on the day
+                    of
+                    our wedding and we absolutely loved her work. Lisa was the best for both quality and price. She
+                    took
+                    photos of our first dance which was super special for us. 10 / 10 would recommend!</p>
+
+
+            </div>
+            <div class="review_footer">
+
+                <p class="landing_review_signature">Ally &amp; Jeff, July 2023</p><button id="rev_1_b" type="button"
+                    onclick="showR(1)">Read <i class="fas fa-info-circle"> </i></button>
+            </div>
+        </div>
+        <div id="rev_2">
+
+            <div class="landing_review_container ">
+                <img class="landing_review_img" src="assets/images/2023+-+Dublin+-+Rachel+-+Wedding+-133.webp"
+                    alt="wedding photographer in Dublin capturing bride and groom on wedding day">
+                <p class="landing_review_content" id="rev_content_2">It was an absolute pleasure to have Lisa as our
+                    wedding photographer.
+                    We would highly recommend Lisa to any couple! Lisa captured our ceremony and reception
+                    perfectly!
+                    Lisa was so kind and easy to work with, she made us feel comfortable straight away. Lisa was
+                    super
+                    responsive in the lead up to and after the wedding. We would hire Lisa again in a heartbeat.
+                    Thanks
+                    Lisa!!</p>
+            </div>
+            <div class="review_footer">
+                <p class="landing_review_signature">Rachel &amp; Conor, November 2023</p><button id="rev_2_b"
+                    type="button" onclick="showR(2)">Read <i class="fas fa-info-circle"> </i></button>
+            </div>
+        </div>
+        <div id="rev_3">
+
+            <div class="landing_review_container">
+                <img class="landing_review_img" src="assets/images/2023+-+Dublin+-+Laura+-+Wedding+-402.webp"
+                    alt="wedding photographer in Dublin capturing bride and groom on wedding day">
+                <p class="landing_review_content" id="rev_content_3">Lisa is truly amazing!! She not only captured
+                    our
+                    wedding perfectly
+                    with the most wonderful photos, but her uplifting and energetic presence on the day was felt by
+                    everyone. She was so much fun to be around, and the time away on our couples session was such a
+                    joy!
+                    I can't recommend Lisa enough. She is super talented, professional, and absolutely great craic.
+                </p>
+            </div>
+            <div class="review_footer">
+
+                <p class="landing_review_signature">Laura &amp; Eoghan, September 2023</p><button id="rev_2_b"
+                    type="button" onclick="showR(3)">Read <i class="fas fa-info-circle"> </i></button>
+            </div>
+
+        </div>
+
+        <h3 class="landing_h3">Some of my awards</h3>
+        <div id="landing_awards">
+            <div><img class="landing_awards_img" src="assets/images/awards/award1.png" alt="award_img"></div>
+            <div><img class="landing_awards_img" src="assets/images/awards/award1.png" alt="award_img"></div>
+        </div>
+
+        <!-- SINAN CODE -->
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>News Letter</h3>
+                    <p>Stay updated with our latest work and offers.</p>
+                    <form action="#" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div id="success-message" class="alert alert-success" style="display:none;">
+                        Thank you for subscribing!
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/lisachonier/%22" target="_blank" rel="noopener">
+                            <img src="assets/icons/instagram_2111463.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <a href="https://www.facebook.com/lisachonierweddings/%22" target="_blank" rel="noopener">
+                            <img src="assets/icons/facebook.png" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href=" https://www.tiktok.com/@lisachonier%22" target="_blank" rel="noopener">
+                            <img src="assets/icons/7024783_tiktok_social media_icon.png" alt="TikTok"
+                                class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Photographer's Website. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!-- BOOSTRAP JS  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+        <!-- JS FUNCTION FOR REVIEWS BUTTON -->
+        <script>
+            function showR(id) {
+                document.getElementById("rev_content_" + id).classList.toggle('show_review')
+                document.getElementById("rev_content_" + id).classList.toggle('show_review')
+                document.getElementById("rev_content_" + id).classList.toggle('show_review')
+            }
+        </script>
+
+        <script>
+            // JavaScript to handle the form submission and show success message
+            const form = document.querySelector('#newsletter-form');
+            const successMessage = document.getElementById('success-message');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting (page reload)
+
+                // You can add further form validation here if needed
+
+                // Show the success message
+                successMessage.style.display = 'block';
+
+                // Optionally, you can hide the success message after a few seconds
+                setTimeout(function () {
+                    successMessage.style.display = 'none';
+                }, 5000); // Hide after 5 seconds
+
+                // Added wait time and reload to clean the form
+                setTimeout('location.reload()', '3000')
+                    ;
+            });
+        </script>
+</body>
+
+</html>
