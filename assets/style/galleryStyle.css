@@ -89,7 +89,7 @@ li a:hover {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-  max-height: auto; /*ensures the image can scale down if required*/
+  max-height: none; /*ensures the image can scale down if required*/
   border-radius: 10px;
 }
 
@@ -125,7 +125,7 @@ li a:hover {
   display: block;
   width: 80%;
   max-width: 700px;
-  max-height: auto;
+  max-height: none;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

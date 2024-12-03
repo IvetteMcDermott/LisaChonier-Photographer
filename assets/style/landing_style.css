@@ -24,6 +24,11 @@ body {
   justify-content: center;
 }
 
+#responsive-video {
+  width: 100%;
+  height: auto;
+}
+
 .landing_h3 {
   width: 100%;
   padding: 30px;
@@ -103,7 +108,8 @@ li a:hover {
 #rev_3 {
   width: 95%;
   background-color: var(--background);
-  margin-left: 0 auto;
+  margin-left: 0;
+  margin-left: auto;
   border-radius: 5px;
   font-size: larger;
   font-weight: 600;

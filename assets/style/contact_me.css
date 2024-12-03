@@ -75,6 +75,10 @@ li a:hover {
   background-color: var(--background-transparency) !important;
 }
 
+iframe {
+  border: none !important;
+}
+
 /* Responsive Logo Adjustment */
 @media (max-width: 767px) {
   .navbar-logo {
