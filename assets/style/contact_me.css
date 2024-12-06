@@ -328,3 +328,12 @@ iframe {
   height: 40px;
   object-fit: cover; /* Ensures icons are fully contained */
 }
+
+/* MONITORS OVER 2000 */
+@media only screen and (min-width: 2000px) {
+  body {
+    width: 80% !important;
+    margin: 0;
+    margin-left: 10% !important;
+  }
+}
